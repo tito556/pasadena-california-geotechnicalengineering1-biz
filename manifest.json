@@ -11,5 +11,10 @@
       "sizes": "any",
       "type": "image/svg+xml"
     }
-  ]
+  ],
+  "lang": "en",
+  "orientation": "portrait",
+  "scope": "/",
+  "description": "Professional geotechnical services in Pasadena California, USA. Soil studies, testing and technical consulting.",
+  "id": "/pasadena-california-2601"
 }
