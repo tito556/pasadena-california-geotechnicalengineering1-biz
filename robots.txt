@@ -34,6 +34,6 @@ User-agent: SemrushBot
 Disallow: /
 
 User-agent: AhrefsBot
-Crawl-delay: 10
+Crawl-delay: 5
 
 Sitemap: https://pasadena-california.geotechnicalengineering1.biz/sitemap.xml
