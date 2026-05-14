@@ -174,6 +174,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head>
 <body>
 
@@ -239,7 +268,7 @@ header.hero, .hero { position: relative !important; }
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 
                 <p>We provide complete preloading design services for Pasadena California, from initial site characterization to final settlement verification.</p>
-                <style>.servicios-grid a.servicio-link:hover h3{color:#8B5CF6}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid a.servicio-link:hover{border-color:#8B5CF6;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#8B5CF6;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}</style><div class="servicios-grid"><div class="servicio"><h3>Preload Fill Design and Staging</h3><p>We define lift thickness, wait periods, and surcharge geometry based on the site-specific consolidation parameters and the time available for the project.</p></div><div class="servicio"><h3>Vertical Drain Layout and Specification</h3><p>When the clay layer exceeds 4 m we design PVD or sand drain spacing to achieve the target degree of consolidation within the construction window.</p></div><div class="servicio"><h3>Settlement Monitoring and Verification</h3><p>We install settlement plates, piezometers, and inclinometers to track pore pressure dissipation and surface heave during the preloading phase.</p></div><div class="servicio"><h3>Post-Preload Remaining Settlement Assessment</h3><p>After removing the fill we run a series of laboratory consolidation tests on undisturbed samples to confirm the residual settlement meets the project tolerance.</p></div></div>
+                <style>.servicios-grid a.servicio-link:hover h3{color:#8B5CF6}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid a.servicio-link:hover{border-color:#8B5CF6;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#8B5CF6;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}</style><div class="servicios-grid"><div class="servicio"><h3>Preload Fill Design and Staging</h3><p>We define lift thickness, wait periods, and surcharge geometry based on the site-specific consolidation parameters and the time available for the project.</p></div><div class="servicio"><h3>Vertical Drain Layout and Specification</h3><p>When the clay layer exceeds 4 m we design PVD or sand drain spacing to achieve the target degree of consolidation within the construction window.</p></div><div class="servicio"><h3>Settlement Monitoring and Verification</h3><p>We install settlement plates, piezometers, and inclinometers to track pore pressure dissipation and surface heave during the preloading phase.</p></div><div class="servicio"><h3>Post-Preload Remaining Settlement Assessment</h3><p>After removing the fill we run a series of <a href="/laboratory/">laboratory</a> consolidation tests on undisturbed samples to confirm the residual settlement meets the project tolerance.</p></div></div>
             </section>
 
             <section>

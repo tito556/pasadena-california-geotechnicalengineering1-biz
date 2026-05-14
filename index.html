@@ -175,6 +175,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head>
 <body>
 
@@ -245,7 +274,7 @@ header.hero, .hero { position: relative !important; }
 
             <section>
                 <h2>Common questions</h2>
-                <details><summary>What are the most common geotechnical challenges for hillside developments in Pasadena?</summary><p>Hillside projects in the San Gabriel foothills face steep slopes, variable bedrock depth, and potential debris-flow hazards. We typically encounter colluvial soils overlying weathered granite or sedimentary rock. Seismic stability is a key concern due to nearby fault zones. Our investigations focus on slope stability, groundwater seepage, and foundation bearing capacity to meet CBC requirements for cut-and-fill grading and retaining structures.</p></details><details><summary>How deep do soil borings typically go for residential projects in Pasadena?</summary><p>For single-family homes on alluvial fans, borings usually extend 15 to 30 feet to penetrate fill or loose soils and reach competent native material. In hillside areas, depths may increase to 40 feet or more to assess bedrock quality and groundwater. The exact depth is determined by structural loads, seismic site class, and local grading codes—our team tailors each program to the specific lot and design.</p></details><details><summary>What seismic design standards apply to new construction in Pasadena?</summary><p>All new buildings in Pasadena must comply with the 2022 California Building Code (CBC), which adopts ASCE 7-22 for seismic loads. Site-specific seismic hazard <a href="foundations-fill/" data-interlink="1">analysis</a> may be required for Risk Category IV structures. We determine the Seismic Site Class (A through F) per ASCE 7-22 based on shear-wave velocity measurements or SPT blow counts, and we evaluate liquefaction and fault-rupture hazards per CBC Chapter 16.</p></details><details><summary>Do you provide geotechnical services for small remodels and additions?</summary><p>Yes. Even modest additions or second-story remodels often require soil bearing capacity verification and settlement <a href="foundations-fill/" data-interlink="1">analysis</a>. We offer targeted subsurface investigations—typically 1–2 borings or test pits—to confirm existing foundation performance and provide recommendations for new footings. Our reports satisfy city plan-check requirements and help avoid costly structural overdesign or underpinning surprises.</p></details>
+                <details><summary>What are the most common geotechnical challenges for hillside developments in Pasadena?</summary><p>Hillside projects in the San Gabriel foothills face steep slopes, variable bedrock depth, and potential debris-flow hazards. We typically encounter colluvial soils overlying weathered granite or sedimentary rock. <a href="/seismic/">Seismic</a> stability is a key concern due to nearby fault zones. Our investigations focus on slope stability, groundwater seepage, and foundation bearing capacity to meet CBC requirements for cut-and-fill grading and retaining structures.</p></details><details><summary>How deep do soil borings typically go for residential projects in Pasadena?</summary><p>For single-family homes on alluvial fans, borings usually extend 15 to 30 feet to penetrate fill or loose soils and reach competent native material. In hillside areas, depths may increase to 40 feet or more to assess bedrock quality and groundwater. The exact depth is determined by structural loads, seismic site class, and local grading codes—our team tailors each program to the specific lot and design.</p></details><details><summary>What seismic design standards apply to new construction in Pasadena?</summary><p>All new buildings in Pasadena must comply with the 2022 California Building Code (CBC), which adopts ASCE 7-22 for seismic loads. Site-specific seismic hazard <a href="foundations-fill/" data-interlink="1">analysis</a> may be required for Risk Category IV structures. We determine the Seismic Site Class (A through F) per ASCE 7-22 based on shear-wave velocity measurements or SPT blow counts, and we evaluate liquefaction and fault-rupture hazards per CBC Chapter 16.</p></details><details><summary>Do you provide geotechnical services for small remodels and additions?</summary><p>Yes. Even modest additions or second-story remodels often require soil bearing capacity verification and settlement <a href="foundations-fill/" data-interlink="1">analysis</a>. We offer targeted subsurface investigations—typically 1–2 borings or test pits—to confirm existing foundation performance and provide recommendations for new footings. Our reports satisfy city plan-check requirements and help avoid costly structural overdesign or underpinning surprises.</p></details>
             </section>
 
             <section>

@@ -174,6 +174,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head>
 <body>
 
@@ -218,7 +247,7 @@ header.hero, .hero { position: relative !important; }
 
             <section>
                 <h2>Critical ground factors in Pasadena California</h2>
-                <p>We worked on a site near the Rose Bowl where a 10-inch concrete pavement was specified over a subgrade that had never been tested. After a winter with above-average rainfall, the clay layer beneath the base course lost over half its strength. The slab started pumping fines at the joints within six months. That job ended with a full-depth reclamation — a cost that could have been avoided with two soaked CBR tests. For any pavement project in Pasadena, ignoring the laboratory CBR test is a gamble. The variability of the local alluvium means one spot can test at CBR 12 and another at CBR 3. You need at least one test per soil type encountered in the subgrade investigation.</p>
+                <p>We worked on a site near the Rose Bowl where a 10-inch concrete pavement was specified over a subgrade that had never been tested. After a winter with above-average rainfall, the clay layer beneath the base course lost over half its strength. The slab started pumping fines at the joints within six months. That job ended with a full-depth reclamation — a cost that could have been avoided with two soaked CBR tests. For any pavement project in Pasadena, ignoring the <a href="/laboratory/">laboratory</a> CBR test is a gamble. The variability of the local alluvium means one spot can test at CBR 12 and another at CBR 3. You need at least one test per soil type encountered in the subgrade investigation.</p>
             </section>
 
             

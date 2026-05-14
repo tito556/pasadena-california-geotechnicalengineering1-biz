@@ -174,6 +174,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head>
 <body>
 
@@ -218,7 +247,7 @@ header.hero, .hero { position: relative !important; }
 
             <section>
                 <h2>Critical ground factors in Pasadena California</h2>
-                <p>IBC 2021 and ASCE 7-22 mandate that all new construction in seismic zones identify subsurface anomalies that could affect foundation performance. Pasadena sits within the Raymond fault zone, where undocumented fill and abandoned utilities are common. A missed void beneath a slab-on-grade can lead to differential settlement and structural cracking during the next seismic event. We run GPR (Ground Penetrating Radar) survey lines on a 2-ft grid to capture every anomaly. Any target deeper than 5 ft gets flagged for follow-up drilling or test pits. This protocol aligns with ASTM D6432-19 and the city's grading ordinance. Skipping this step means accepting unknown risk under every footing.</p>
+                <p>IBC 2021 and ASCE 7-22 mandate that all new construction in <a href="/seismic/">seismic</a> zones identify subsurface anomalies that could affect foundation performance. Pasadena sits within the Raymond fault zone, where undocumented fill and abandoned utilities are common. A missed void beneath a slab-on-grade can lead to differential settlement and structural cracking during the next seismic event. We run GPR (Ground Penetrating Radar) survey lines on a 2-ft grid to capture every anomaly. Any target deeper than 5 ft gets flagged for follow-up drilling or test pits. This protocol aligns with ASTM D6432-19 and the city's grading ordinance. Skipping this step means accepting unknown risk under every footing.</p>
             </section>
 
             
